@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "supervisor server.js",
-    "install": "npm install grunt grunt-cli"
+    "start": "supervisor server.js"
   },
   "main": "server.js",
   "author": "Kiran Smith",
