@@ -4,7 +4,8 @@ OLD_HOME=$HOME
 cd $OPENSHIFT_REPO_DIR
 export HOME=$OPENSHIFT_REPO_DIR
 
-npm install
-./node_modules/.bin/grunt
+echo " >>>>>>>>> Building with grunt..."
+node_modules/grunt-cli/bin/grunt
+echo " >>>>>>>>> Finished building with grunt..."
 
 export HOME=$OLD_HOME
