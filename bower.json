@@ -29,6 +29,17 @@
   "resolutions": {
     "angular": "~1.4"
   },
+  "install": {
+    "path": "libs",
+    "sources" : {
+      "bootstrap" : {
+        "mapping": [
+          {"bower_components/bootstrap/dist/js/bootstrap.js": "js/bootstrap.js"},
+          {"bower_components/bootstrap/dist/css/bootstrap.css": "css/bootstrap.css"}
+        ]
+      }
+    }
+  },
   "exportsOverride": {
     "bootstrap": {
       "js": "dist/js/bootstrap.js",

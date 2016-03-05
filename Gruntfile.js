@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 
     })
 
-    grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-bower-installer');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');

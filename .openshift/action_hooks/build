@@ -2,5 +2,5 @@
 
 HOME=$HOME/app-root/runtime
 cd ~/repo
-npm install bower
-./node_modules/.bin/bower install --config.directory="lib"
+npm install bower bower-installer
+./node_modules/.bin/bower-installer
