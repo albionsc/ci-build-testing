@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "supervisor server.js",
-    "install": "npm install grunt-cli"
+    "install": "npm install grunt grunt-cli"
   },
   "main": "server.js",
   "author": "Kiran Smith",
