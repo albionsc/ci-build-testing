@@ -5,6 +5,5 @@ cd $OPENSHIFT_REPO_DIR
 export HOME=$OPENSHIFT_REPO_DIR
 
 npm install
-./node_modules/grunt-cli/bin/grunt
 
 export HOME=$OLD_HOME
