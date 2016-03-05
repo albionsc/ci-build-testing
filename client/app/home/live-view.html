@@ -1,0 +1,79 @@
+<div id="header" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2">
+            <h2>{{applicationName}}</h2>
+        </div>
+        <div id="button-container" class="col-xs-10">
+            <button ui-sref="/home" type="button" class="template-view-button current-view">Live View</button>
+            <button ui-sref="/preview" type="button" class="template-view-button">Template View</button>
+        </div>
+    </div>
+</div>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div id="main-section" class="col-xs-9">
+            <h2>Live View</h2>
+            <hot-table
+                min-rows="tableAttributes.minRows"
+                min-cols="tableAttributes.minCols"
+                col-headers="tableAttributes.colHeaders"
+                row-headers="tableAttributes.rowHeaders"
+                height="tableAttributes.height">
+            </hot-table>
+        </div>
+        <div id="config-section" class="col-xs-3">
+            <div class="container-fluid">
+                <h2>Config section</h2>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label>Brand:</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <select ng-model="brands" ng-options="brand.name for brand in menuOptions.brands">
+                        <!--<select ng-if="title.name == 'Brand'" ng-model="brands" ng-options="brand.name for brand in menuOptions.brands">-->
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label>Type:</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <select ng-disabled="!brands" ng-model="types" ng-options="productType.name for productType in brands.productTypes">
+                        <!--<select ng-if="title.name == 'Type'" ng-disabled="!brands" ng-model="types" ng-options="productType.name for productType in brands.productTypes">-->
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label>Template:</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <select ng-disabled="!types">
+                        <!--<select ng-if="title.name == 'Template'" ng-disabled="!types" ng-options="">-->
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <label>Mapping rules:</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <select ng-model="rules" ng-options="mappingRule.id as mappingRule.name for mappingRule in menuOptions.mappingRules">
+                        <!--<select ng-if="title.name == 'Template'" ng-disabled="!types" ng-options="">-->
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <button ng-click="initTable(2)">Update</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

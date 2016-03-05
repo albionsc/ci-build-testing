@@ -1,0 +1,31 @@
+#header{
+    background-color: #008080;
+    min-height: 80px;
+}
+
+.col-xs-1 > h2{
+    color: #ffffff;
+}
+
+#main-section, #config-section{
+    border: 1px solid #999999;
+}
+
+#button-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.template-view-button{
+    height: 40px;
+    background-color: #008080;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.template-view-button.current-view{
+    background-color: #ffffff;
+    color: #008080;
+}

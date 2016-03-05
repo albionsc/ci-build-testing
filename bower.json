@@ -1,0 +1,38 @@
+{
+  "name": "ci-build-testing",
+  "description": "Core application code for TIGER PoC",
+  "authors": [
+    "Kiran Smith"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~1.2.1",
+    "angular-ui-router": "~0.2.18",
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.1",
+    "angular": "angularjs#~1.5.0",
+    "ngHandsontable": "~0.8.0",
+    "moment": "~2.11.2"
+  },
+  "resolutions": {
+    "angular": "~1.4"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/bootstrap.js",
+      "css": "dist/css/bootstrap.css"
+    }
+  }
+}

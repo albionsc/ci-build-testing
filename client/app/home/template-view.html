@@ -1,0 +1,30 @@
+<div id="header" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2">
+            <h2>{{applicationName}}</h2>
+        </div>
+        <div id="button-container" class="col-xs-10">
+            <button ui-sref="/home" type="button" class="template-view-button">Live View</button>
+            <button ui-sref="/preview" type="button" class="template-view-button current-view">Template View</button>
+        </div>
+    </div>
+</div>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div id="main-section" class="col-xs-9">
+            <h2>Template View</h2>
+            <hot-table
+                min-rows="tableAttributes.minRows"
+                min-cols="tableAttributes.minCols"
+                col-headers="tableAttributes.colHeaders"
+                row-headers="tableAttributes.rowHeaders"
+                height="tableAttributes.height">
+            </hot-table>
+        </div>
+        <div id="config-section" class="col-xs-3">
+            <h2>Config section</h2>
+        </div>
+    </div>
+</div>
+
+
