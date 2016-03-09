@@ -5,31 +5,34 @@
         <title>Test PoC</title>
         <base href="/">
         <meta name="description" content="Test PoC">
+
+        <!-- build:css lib/vendor.min.css -->
+        <link rel="stylesheet" href="lib/materialize/materialize.css">
+        <link rel="stylesheet" href="lib/handsontable/handsontable.css">
+        <!-- endbuild -->
+
+        <!-- build:js lib/vendor.min.js -->
+        <script src="lib/jquery/jquery.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-ui-router/angular-ui-router.js"></script>
+        <script src="lib/materialize/materialize.js"></script>
+        <script src="lib/pikaday/pikaday.js"></script>
+        <script src="lib/moment/moment.js"></script>
+        <script src="lib/zeroclipboard/ZeroClipboard.js"></script>
+        <script src="lib/handsontable/handsontable.js"></script>
+        <script src="lib/ngHandsontable/ngHandsontable.js"></script>
+        <!-- endbuild -->
+
+
         <!-- css files -->
-        <link rel="stylesheet" href="/client/app/home/home.css">
-        <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="/lib/handsontable/handsontable.css">
-
-        <!-- end css files -->
-
-        <!-- core bower js files -->
-        <script src="/lib/jquery/jquery.js"></script>
-        <script src="/lib/angular/angular.js"></script>
-        <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script src="/lib/angular-ui-router/angular-ui-router.js"></script>
-        <script src="/lib/bootstrap/js/bootstrap.js"></script>
-        <script src="/lib/pikaday/pikaday.js"></script>
-        <script src="/lib/moment/moment.js"></script>
-        <script src="/lib/zeroclipboard/ZeroClipboard.js"></script>
-        <script src="/lib/handsontable/handsontable.js"></script>
-        <script src="/lib/ngHandsontable/ngHandsontable.js"></script>
-        <!-- end core bower js files -->
+        <link rel="stylesheet" href="app/home/home.css">
+        <!-- end css file -->
 
         <!-- js files -->
-        <script src="/client/app.js"></script>
-        <script src="/client/components/controllers/app-header/App-header.controller.js"></script>
-        <script src="/client/app/home/home.controller.js"></script>
-        <script src="/client/components/services/config.service.js"></script>
+        <script src="app.js"></script>
+        <script src="components/controllers/app-header/App-header.controller.js"></script>
+        <script src="app/home/home.controller.js"></script>
+        <script src="components/services/config.service.js"></script>
 
         <!-- end js files -->
     </head>

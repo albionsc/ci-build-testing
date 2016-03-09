@@ -1,0 +1,31 @@
+Pull
+NPM Install
+Grunt
+ - Client
+    - Bower Install         - Done
+    - Karma                 - Done
+    - Protractor
+    - Coverage              - Done
+    - JSHint                - Done
+    - Concat JS             - Done
+    - Minify JS             - Done
+    - Concat CSS            - Done
+    - Minify CSS            - Done
+    - File Revisions        - Done
+    - Copy To Dist          - Done
+ - Server
+    - Karma
+    - Protractor
+    - Coverage
+    - JSHint
+    - Copy To Dist          - Done
+ - UpVersion
+ - Tag
+ - Ansible To Dev
+ - Remote Integration Tests
+ - Tag With Dev
+ - Ansible To Test
+ - Remote Integration Tests
+ - Tag With Dev
+
+

@@ -9,7 +9,7 @@ angular.module("appCore")
                 //views: {
                 //    "header" : { templateUrl: "/client/app/components/controllers/app-header/app-header.html" },
                 //    "content" : { templateUrl: "/client/app/home/live-view.html" }
-                //}
+                //
 
                 //views: {
                 //    "header" : {

@@ -1,5 +1,8 @@
-lib/**
 node_modules/**
-build/**
 .idea/**
 bower_components/**
+dist/**
+/.tmp
+/BuildSteps.txt
+/reports
+client/lib/**

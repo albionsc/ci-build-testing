@@ -2,30 +2,33 @@ module.exports = function(config) {
     config.set({
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
-        basePath: '.',
+        basePath: '../../',
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
         frameworks: ['jasmine'],
 
         files: [
-            'lib/jquery/jquery.js',
-            'lib/angular/angular.js',
+            'test/client/polyfills.js',
+
+            'client/lib/jquery/jquery.js',
+            'client/lib/angular/angular.js',
             'node_modules/angular-mocks/angular-mocks.js',
-            'lib/angular-ui-router/angular-ui-router.js',
-            'lib/angular-bootstrap/ui-bootstrap-tpls.js',
-            'lib/zeroclipboard/ZeroClipboard.js',
-            'lib/pikaday/pikaday.js',
-            'lib/moment/moment.js',
-            'lib/handsontable/handsontable.js',
-            'lib/ngHandsontable/ngHandsontable.js',
+            'client/lib/angular-ui-router/angular-ui-router.js',
+            'client/lib/materialize/js/materialize.js',
+            'client/lib/zeroclipboard/ZeroClipboard.js',
+            'client/lib/pikaday/pikaday.js',
+            'client/lib/moment/moment.js',
+            'client/lib/handsontable/handsontable.js',
+            'client/lib/ngHandsontable/ngHandsontable.js',
 
 
+            'client/app.js',
+            'client/components/**/*.js',
+            'client/app/**/*.js',
 
 
-            'test/components/controllers/app-header/*spec.js',
-            'client/**/*.js',
-
+            'test/client/components/controllers/app-header/*spec.js'
         ],
 
         // list of files to exclude
@@ -45,13 +48,13 @@ module.exports = function(config) {
         reporters: ['progress', 'junit', 'coverage'],
 
         junitReporter: {
-            outputFile: 'build/client/test/test-results.xml',
+            outputFile: 'reports/client/test/test-results.xml',
         },
 
         coverageReporter: {
             reporters:[
-                {type: 'html', dir:'build/client/coverage/'},
-                {type: 'cobertura', dir:'build/client/coverage'}
+                {type: 'html', dir:'reports/client/coverage/'},
+                {type: 'cobertura', dir:'reports/client/coverage'}
             ]
         },
 

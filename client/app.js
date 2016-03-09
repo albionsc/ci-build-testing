@@ -2,7 +2,6 @@
 
 var app = angular.module("appCore", [
     "ui.router",
-    "ui.bootstrap",
     "ngHandsontable"
 ]).config(function($urlRouterProvider, $stateProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
@@ -22,15 +21,15 @@ var app = angular.module("appCore", [
             url: "/",
             views: {
                 'header': {
-                    templateUrl: "client/components/controllers/app-header/app-header.html",
+                    templateUrl: "components/controllers/app-header/app-header.html",
                     controller: "AppHeaderCtrl"
                 },
                 'content': {
-                    templateUrl: "client/app/home/live-view.html",
+                    templateUrl: "app/home/live-view.html",
                     controller: "HomeCtrl"
                 },
                 'menu': {
-                    templateUrl: "client/components/controllers/app-menu/app-menu.html"
+                    templateUrl: "components/controllers/app-menu/app-menu.html"
                 }
             }
         })
@@ -38,15 +37,15 @@ var app = angular.module("appCore", [
             url: "/",
             views: {
                 'header': {
-                    templateUrl: "client/components/controllers/app-header/app-header.html",
+                    templateUrl: "components/controllers/app-header/app-header.html",
                     controller: "AppHeaderCtrl"
                 },
                 'content': {
-                    templateUrl: "client/app/home/template-view.html",
+                    templateUrl: "app/home/template-view.html",
                     controller: "HomeCtrl"
                 },
                 'menu': {
-                    templateUrl: "client/components/controllers/app-menu/app-menu.html"
+                    templateUrl: "components/controllers/app-menu/app-menu.html"
                 }
             }
         });
