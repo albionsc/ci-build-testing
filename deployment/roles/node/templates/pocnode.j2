@@ -1,0 +1,20 @@
+#!/bin/sh
+#/etc/init.d/nodepoc
+
+export PATH=$PATH:/usr/local/bin
+export NODE_PATH=$NODE_PATH:{{ application_root }}/dist/node_modules
+
+case "$1" in
+  start)
+  exec forever --sourceDir={{ application_root }}/dist/server -p {{forever_location }} server.js
+  ;;
+stop)
+  exec forever stop --sourceDir={{ application_root }}/dist/server -p {{forever_location }} server.js
+  ;;
+*)
+  echo "Usage: /etc/init.d/nodeup {start|stop}"
+  exit 1
+  ;;
+esac
+
+exit 0

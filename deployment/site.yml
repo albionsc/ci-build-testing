@@ -1,0 +1,7 @@
+---
+# Playbok for deploying all poc components
+
+- name: Configure and deploy to node servers
+  hosts: node
+  roles: 
+    - node

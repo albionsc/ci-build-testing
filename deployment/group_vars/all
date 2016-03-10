@@ -1,0 +1,7 @@
+---
+# Variables specific to node
+application_user: ec2-user
+application_user_group: ec2-user
+application_name: poc
+application_root: /var/www/{{ application_name }}
+
