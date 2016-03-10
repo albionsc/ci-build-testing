@@ -3,7 +3,7 @@
 angular.module('appCore')
     .service('ConfigService', function() {
         var pages = [{
-            "applicationName": "TestApp",
+            "applicationName": "Ansible Deployed",
             "menuOptions": {
                 "titles": [
                     {"name": "Brand"},
