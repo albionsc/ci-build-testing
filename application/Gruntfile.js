@@ -36,7 +36,8 @@ module.exports = function (grunt) {
                         angular: true
                     },
                     reporterOutput: "reports/client/jshint",
-                }
+                },
+		src: ['client/**/*.js', '!client/lib/**']
             }
 
         },
